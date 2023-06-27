@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: raugdevbigticketing/auth
+          image: us.gcr.io/bigticketing-dev/auth
 
 ---
 
