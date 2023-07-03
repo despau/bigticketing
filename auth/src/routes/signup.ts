@@ -32,9 +32,7 @@ router.post('/api/users/signup',
 
         const user = User.build({ email, password })
         await user.save();
-
-        console.error('User Created');
-        
+       
         
         // Generate JWT
         const userJwt = jwt.sign(
