@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: bigticketing-dev/auth
+          image: raugdev24/bigticketing-dev-auth
           env:
             - name: JWT_KEY
               valueFrom:

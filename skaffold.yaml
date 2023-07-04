@@ -10,11 +10,19 @@ build:
   # googleCloudBuild:
   #   projectId: bigticketing-dev
   artifacts:
-    - image: bigticketing-dev/auth
+    - image: raugdev24/bigticketing-dev-auth
       context: auth
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
           - src: 'src/**/*.ts'
+            dest: .
+    - image: raugdev24/bigticketing-dev-client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '**/*.js'
             dest: .
