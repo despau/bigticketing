@@ -1,4 +1,4 @@
-import { MongoMemoryServer } from 'mongodb-memory-server';
+import { MongoMemoryServer } from 'mongodb-memory-server-global';
 import mongoose from 'mongoose';
 import request from 'supertest';
 import { app } from './../app';
