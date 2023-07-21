@@ -30,6 +30,7 @@ router.post(
         await ticket.save();
 
         res.status(201).send(ticket);
+        console.log('ticket created: ', ticket)
     }
 );
     
